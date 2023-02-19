@@ -1,23 +1,23 @@
 const mongoose = require("mongoose")
 // const autoIncrement = require("mongoose-auto-increment")
 const schema = mongoose.Schema({
-    title:{
+    name:{
         type  : String
     },
-    image :{
+    type :{
         type :  String
     } ,
-    price :{
+    longitute :{
         type :  Number
     } ,
-    amount :{
+    latitute :{
         type :  Number
-    } 
+    } ,
 })
 
 
 // autoIncrement.initialize(mongoose.connection)
 // schema.plugin(autoIncrement.plugin, 'user')
 
-const ReqModel = mongoose.model("product" , schema)
+const ReqModel = mongoose.model("request" , schema)
 module.exports = ReqModel
