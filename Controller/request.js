@@ -19,20 +19,20 @@ const emergency = {
             }
         })
     },
-    // getCart: (req, res) => {
-    //     productModel.find({}, (err, data) => {
-    //         if (err) {
-    //             res.send(err)
+    getReq: (req, res) => {
+        ReqModel.find({}, (err, data) => {
+            if (err) {
+                res.send(err)
 
-    //         } else {
-    //             res.json({
-    //                 data,
-    //                 msg : "get Data"
-    //             })
-    //         }
+            } else {
+                res.json({
+                    data,
+                    msg : "get Data"
+                })
+            }
 
-    //     })
-    // }
+        })
+    }
 }
 
 module.exports = emergency
